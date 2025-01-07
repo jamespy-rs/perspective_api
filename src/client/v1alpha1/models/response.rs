@@ -19,6 +19,7 @@ pub struct AttributeScores {
     pub profanity: Option<AttributeScore>,
     pub threat: Option<AttributeScore>,
     pub flirtation: Option<AttributeScore>,
+    pub insult: Option<AttributeScore>,
     /// experimental stuff.
     pub toxicity_experimental: Option<AttributeScore>,
     pub severe_toxicity_experimental: Option<AttributeScore>,
