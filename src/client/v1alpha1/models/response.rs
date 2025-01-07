@@ -1,12 +1,13 @@
 use serde::{Deserialize, Serialize};
 
-/// Raw success structure from the API. It is unclear which fields always exist, so they are all optional.
+/// Raw success structure from the API. It is unclear which fields always exist,
+/// so they are all optional.
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 pub struct AnalyzeCommentResponse {
-    attribute_scores: Option<AttributeScores>,
-    languages: Option<Vec<String>>,
-    detected_languages: Option<Vec<String>>,
+    pub attribute_scores: Option<AttributeScores>,
+    pub languages: Option<Vec<String>>,
+    pub detected_languages: Option<Vec<String>>,
 }
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
