@@ -12,31 +12,31 @@ pub struct AnalyzeCommentResponse {
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AttributeScores {
-    toxicity: Option<AttributeScore>,
-    identity_attack: Option<AttributeScore>,
-    sexually_explicit: Option<AttributeScore>,
-    severe_toxicity: Option<AttributeScore>,
-    profanity: Option<AttributeScore>,
-    threat: Option<AttributeScore>,
-    flirtation: Option<AttributeScore>,
+    pub toxicity: Option<AttributeScore>,
+    pub identity_attack: Option<AttributeScore>,
+    pub sexually_explicit: Option<AttributeScore>,
+    pub severe_toxicity: Option<AttributeScore>,
+    pub profanity: Option<AttributeScore>,
+    pub threat: Option<AttributeScore>,
+    pub flirtation: Option<AttributeScore>,
 }
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 pub struct AttributeScore {
-    span_scores: Option<Vec<SpanScore>>,
-    summary_score: Option<Score>,
+    pub span_scores: Option<Vec<SpanScore>>,
+    pub summary_score: Option<Score>,
 }
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct SpanScore {
-    begin: Option<i64>,
-    end: Option<i64>,
-    score: Option<Score>,
+    pub begin: Option<i64>,
+    pub end: Option<i64>,
+    pub score: Option<Score>,
 }
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Score {
-    value: Option<f64>,
+    pub value: Option<f64>,
     #[serde(rename = "type")]
-    score_type: Option<Type>,
+    pub score_type: Option<Type>,
 }
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub enum Type {
