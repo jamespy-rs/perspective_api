@@ -1,0 +1,13 @@
+{
+  "error": {
+    "code": 400,
+    "message": "Comment must be non-empty.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.commentanalyzer.v1alpha1.Error",
+        "errorType": "COMMENT_EMPTY"
+      }
+    ]
+  }
+}

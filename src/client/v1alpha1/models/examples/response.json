@@ -1,0 +1,106 @@
+{
+  "attributeScores": {
+    "INSULT": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 31,
+          "score": {
+            "value": 0.7298119,
+            "type": "PROBABILITY"
+          }
+        }
+      ],
+      "summaryScore": {
+        "value": 0.7298119,
+        "type": "PROBABILITY"
+      }
+    },
+    "THREAT": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 31,
+          "score": {
+            "value": 0.008686432,
+            "type": "PROBABILITY"
+          }
+        }
+      ],
+      "summaryScore": {
+        "value": 0.008686432,
+        "type": "PROBABILITY"
+      }
+    },
+    "SEVERE_TOXICITY": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 31,
+          "score": {
+            "value": 0.030523606,
+            "type": "PROBABILITY"
+          }
+        }
+      ],
+      "summaryScore": {
+        "value": 0.030523606,
+        "type": "PROBABILITY"
+      }
+    },
+    "TOXICITY": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 31,
+          "score": {
+            "value": 0.7856813,
+            "type": "PROBABILITY"
+          }
+        }
+      ],
+      "summaryScore": {
+        "value": 0.7856813,
+        "type": "PROBABILITY"
+      }
+    },
+    "IDENTITY_ATTACK": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 31,
+          "score": {
+            "value": 0.034558404,
+            "type": "PROBABILITY"
+          }
+        }
+      ],
+      "summaryScore": {
+        "value": 0.034558404,
+        "type": "PROBABILITY"
+      }
+    },
+    "PROFANITY": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 31,
+          "score": {
+            "value": 0.4840093,
+            "type": "PROBABILITY"
+          }
+        }
+      ],
+      "summaryScore": {
+        "value": 0.4840093,
+        "type": "PROBABILITY"
+      }
+    }
+  },
+  "languages": [
+    "en"
+  ],
+  "detectedLanguages": [
+    "en"
+  ]
+}

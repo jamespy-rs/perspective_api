@@ -1,0 +1,45 @@
+[package]
+exclude = ["src/main.rs"]
+name = "perspective_api"
+version = "1.0.0"
+authors = ["honestlysamuk"]
+edition = "2021"
+description = "An unopinionated client and a somewhat opinionated service for the Perspective API."
+license = "BSD-3-Clause"
+homepage = "https://github.com/honestlysamuk/perspective_api"
+documentation = "https://developers.perspectiveapi.com/s/?language=en_US"
+repository = "https://github.com/honestlysamuk/perspective_api"
+readme = "README.md"
+
+[dependencies]
+reqwest = { version = "0.12.5", features = ["json"] }
+serde = { version = "1.0.205", features = ["derive"] }
+thiserror = "1.0.63"
+url = "2.5.2"
+serde_json = "1.0.122"
+tracing = "0.1.40"
+anyhow = { version = "1.0.86", optional = true }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+pretty_assertions = "1"
+
+[features]
+service = ["anyhow"]
+
+[lints.clippy]
+single_match = "warn"
+single_match_else = "warn"
+needless_match = "warn"
+needless_late_init = "warn"
+redundant_pattern_matching = "warn"
+redundant_pattern = "warn"
+redundant_guards = "warn"
+collapsible_match = "warn"
+match_single_binding = "warn"
+match_same_arms = "warn"
+match_ref_pats = "warn"
+match_bool = "warn"
+needless_bool = "deny"
+unwrap_used = "warn"
+expect_used = "warn"
