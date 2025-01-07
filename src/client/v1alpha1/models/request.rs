@@ -85,12 +85,29 @@ pub struct RequestedAttributes {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub identity_attack: Option<ScoreOptions>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub insult: Option<ScoreOptions>,
+    pub sexually_explicit: Option<ScoreOptions>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub profanity: Option<ScoreOptions>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub threat: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub flirtation: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub insult: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub toxicity_experimental: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub severe_toxicity_experimental: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub identity_attack_experimental: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub insult_experimental: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub profanity_experimental: Option<ScoreOptions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub threat_experimental: Option<ScoreOptions>,
 }
+
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ScoreOptions {

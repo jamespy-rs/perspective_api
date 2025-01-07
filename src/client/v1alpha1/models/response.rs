@@ -19,6 +19,13 @@ pub struct AttributeScores {
     pub profanity: Option<AttributeScore>,
     pub threat: Option<AttributeScore>,
     pub flirtation: Option<AttributeScore>,
+    /// experimental stuff.
+    pub toxicity_experimental: Option<AttributeScore>,
+    pub severe_toxicity_experimental: Option<AttributeScore>,
+    pub identity_attack_experimental: Option<AttributeScore>,
+    pub insult_experimental: Option<AttributeScore>,
+    pub profanity_experimental: Option<AttributeScore>,
+    pub threat_experimental: Option<AttributeScore>,
 }
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
